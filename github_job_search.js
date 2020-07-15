@@ -46,12 +46,16 @@ function send_req(desc, location)
 
 function display(results)
 {
-
+    
     
     var get_res= document.getElementById("job_search_results")
     get_res.innerHTML=""
-    // var temp=""
-   
+   if(results.length==0)
+    {
+
+        get_res.innerHTML= "No Results Found"
+    }
+
     for(var i=0; i<results.length; i++)
     {
         console.log(results[i].title, "AA")
