@@ -56,14 +56,14 @@ function display(results)
     {
         console.log(results[i].title, "AA")
         var card= document.createElement("div")
-        card.setAttribute("class", "card")
+        card.setAttribute("class", "card mb-lg-3 mb-md-3 col-sm-6 col-md-6 col-lg-12")
 
         var card_body= document.createElement("div")
         card_body.setAttribute("class", "card-body")
 
         var p_title= document.createElement("p")
         p_title.innerHTML= "<a href="+results[i].url+">"+results[i].title+"</a>"
-        p_title.setAttribute("class", "lead font-weight-bolder text-dark card-header mx-0")
+        p_title.setAttribute("class", "lead font-weight-bolder text-dark card-header mx-0 bg-white")
 
         var p_company= document.createElement("p")
         p_company.textContent= "Company Name: "+results[i].company
@@ -76,6 +76,14 @@ function display(results)
         var p_type= document.createElement("p")
         p_type.innerHTML= "Type: "+results[i].type
         p_type.setAttribute("class", "text-success")
+
+        var p_created= document.createElement("p")
+        p_created.textContent= "Posted On: "+results[i].created_at
+        p_created.setAttribute("class", "small text-secondary")
+
+        var p_btn= document.createElement("button")
+        p_btn.innerHTML= "<a href="+results[i].company_url+"> Apply"+"</a>"
+        p_btn.setAttribute("class", "btn btn-outline-success text-white")
         /*
         var p_url= document.createElement("p")
         p_url.textContent= "URL: "+results.items[i].clone_url
@@ -83,7 +91,7 @@ function display(results)
         var p_des= document.createElement("p")
         p_des.textContent= "Description: "+results.items[i].description */
 
-        card_body.append(p_title,p_company, p_location, p_type)
+        card_body.append(p_title,p_company, p_location, p_type, p_created, p_btn)
 
         
         card.append(card_body)
