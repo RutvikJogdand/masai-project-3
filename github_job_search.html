@@ -10,22 +10,21 @@
             <form id="form_1">
                
                 <label for="description">Job Description:
-                    <input type="text" class="form-control" id="description">
+                    <input type="text" name="description" class="form-control" id="description">
                 </label>
                 <label for="location">Location:
-                    <input type="text" class="form-control" id="location">
+                    <input type="text" name="location" class="form-control" id="location">
                 </label>
                 <br>
-                <label for="fulltime">Full-time
-                    <input type="checkbox" class="form-control" id="fulltime">
-                </label>
-                <input type="submit" value="Search" class="btn btn-primary form-control ">
+                <input type="submit" value="Search" id="search_btn" class="btn btn-primary">
             </form>
         </div>
         <hr>
         <div id="job_search_results" class="container">
 
         </div>
+
+        <script type="text/javascript" src="github_job_search.js"></script>
     </body>
 
 </html>
