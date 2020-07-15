@@ -72,7 +72,18 @@ function display(results)
 
     joke_display.innerHTML=""
 
-    joke_display.innerHTML= "~"+results.setup+"<br><br>"+results.delivery+"~"
+    if(results.setup!=undefined&&results.delivery!=undefined)
+    {
+        joke_display.innerHTML= "~"+results.setup+"<br><br>"+results.delivery+"~"
+    }
+
+
+    else
+    {
+        joke_display.innerHTML= "~"+results.joke+"~"
+    }
+
+    
 }
 
 
