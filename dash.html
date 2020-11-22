@@ -4,10 +4,11 @@
         <title>Dashboard</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
     </head>
 
-    <body>
-        <div class="container-fluid">
+    <body class="mb-4">
+        <div class="container-fluid mb-2">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
                 <a class="navbar-brand" href="#">Engineers Hub</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,16 +19,88 @@
                     <a class="nav-item nav-link text-white" href="#">Dashboard <span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link text-white" href="github_job_search.html">Jobs</a>
                     <a class="nav-item nav-link text-white" href="joke_page.html">Jokes</a>                    
-                </div>
+                  </div>
                   <a class="nav-item nav-link btn btn-primary offset-sm-0 float-right offset-md-8 mr-3 small" href="login.html">Logout</a>
                 </div>
             </nav>
-
         </div>
-        <br><br><br><br>
-        <div id="res" class="container row">
+        <br>
+        <ul class="nav nav-pills nav-justified position-sticky mb-3 mt-4 bg-dark" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="pills-news-tab" data-toggle="pill" href="#pills-news" role="tab" aria-controls="pills-news" aria-selected="true">News</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="pills-advice-tab" data-toggle="pill" href="#pills-advice" role="tab" aria-controls="pills-advice" aria-selected="false">Advice</a>
+          </li>
+          <!-- <li class="nav-item" role="presentation">
+            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+          </li> -->
+        </ul>
+        <br><br><br>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-news" role="tabpanel" aria-labelledby="pills-news-tab">
+            <div id="res" class="container offset-md-1 row">
 
+            </div>
+          </div>
+          <div class="tab-pane fade container" id="pills-advice" role="tabpanel" aria-labelledby="pills-advice-tab">
+            <!-- ADVICE -->
+            <p>Engineering is one of the most popular field to go for in our country(India).
+
+              There are some people who do well in it no doubt and have charted out a good career path for themselves.
+              
+              But,</p>
+<ul>
+	<li>A huge chunk of the 15 lakh engineers who graduate earn 3-4 lakhs per annum or even less than that.</li>
+	<li>A majority are stuck doing monotonous and mundane jobs which don't contribute positively to their personal growth, knowledge or career.</li>
+	<li>A lot of these then go for MBA or higher education after being frustrated with what they are doing and hope that things will change after they get that next degree.</li>
+	<li>On a personal note, I've seen a lot of these engineers from different branches(Mechanical engineering, Electronics, Telecommunications..etc) work in an IT company. Very few land up in their desired profile. I've seen a lot of them earning meager salaries and be disappointed with the work they are doing.</li>
+</ul>
+I went into engineering expecting to be taught things that would help me build cool things and work on technologies through which i could build a cool app or tech. It did not go the way i expected. <strong><em>A lot of focus in the college was on passing exams and maintaining a CGPA above 7 so that in the end you could get a nice job.</em></strong>
+
+<strong>A lot of engineering colleges these days are run like a business where the focus is on getting students placed rather than getting them educated and really learn and solve problems through thinking.</strong>
+
+Well you might be asking...WHAT THE HELL DO WE DO ABOUT IT THEN!!!
+
+Well my answer to that is kinda simple..
+<h5>GET THE NECESSARY SKILLS TO GET THE JOBS OR CAREER YOU WANT!</h5>
+<h5>In demand skills now and for the future(NASSCOM Data):</h5>
+<img class="alignnone size-full img-responsive img-fluid wp-image-55" src="https://whyydoit.files.wordpress.com/2019/06/nasscom-pdf-e1560274793250.png" alt="nasscom-pdf.png" width="1238" height="616" />
+<h2>What you should do if you are currently doing engineering?</h2>
+<h5>Ans:</h5>
+<ul>
+	<li>Take part in and be a part of organizations in your college, eg: <strong>IEEE, IETE </strong>etc. The events these bodies organize are a good way to get some hands on training and knowledge which would benefit you in the future.</li>
+	<li>Go to <strong>codecamps. </strong>If you are really interested in coding and want to get into things like Data science, machine learning and all these upcoming fields then learn <strong><a href="https://www.codecademy.com/catalog/language/python" target="_blank" rel="noopener">Python</a></strong><strong>. </strong>I've listed some links on here which you can refer to start learning
+<ul>
+	<li><a href="http://www.openculture.com/engineering_free_courses" target="_blank" rel="noopener">Free online Engineering courses</a></li>
+	<li><a href="https://learntocodewith.me/posts/code-for-free/" target="_blank" rel="noopener">71 best places to learn coding for FREE!</a></li>
+	<li><a href="https://teamtreehouse.com/">Treehouse(Learn to code, gain a new skill, get a new job)</a></li>
+	<li><a href="https://trainings.internshala.com/?utm_source=internshala-menu-dropdown-FTUD1">You can learn coding here and build a sample project which you will be guided through and get a certificate</a>.</li>
+	<li><a href="https://www.quora.com/How-should-I-plan-to-get-an-SDE-position-at-Amazon-Bangalore-within-2-years" target="_blank" rel="noopener">Becoming a </a><strong><a href="https://www.quora.com/How-should-I-plan-to-get-an-SDE-position-at-Amazon-Bangalore-within-2-years" target="_blank" rel="noopener">good</a></strong><a href="https://www.quora.com/How-should-I-plan-to-get-an-SDE-position-at-Amazon-Bangalore-within-2-years" target="_blank" rel="noopener"> Software Developer</a></li>
+	<li><a href="https://www.freecodecamp.org/" target="_blank" rel="noopener">FreeCodeCamp.org</a></li>
+	<li><a href="https://www.topuniversities.com/blog/33-useful-websites-students" target="_blank" rel="noopener">https://www.topuniversities.com/blog/33-useful-websites-students</a></li>
+	<li><a href="https://medium.com/@tristaljing/10-best-app-development-courses-for-beginners-and-get-a-job-d84dbf34b101" target="_blank" rel="noopener">10 best App development courses for beginners(Get a job!)</a></li>
+	<li><a href="https://qz.com/1120344/200-universities-just-launched-600-free-online-courses-heres-the-full-list/" target="_blank" rel="noopener">Over 600 FREE Online courses by 200 of the world's reputed universities</a></li>
+	<li>Go and do internships! This is one of the best ways to learn. The only way that you are going to get hired at a good place in the end is if you have skills which you can apply to real world problems. So internship in your desired field is your best bet to get there or learn something that you can apply later.</li>
+</ul>
+<ul>
+	<li>You can try <a href="https://internshala.com/internships/" target="_blank" rel="noopener">Internshala.com</a>. They have internships ranging from fields like Engineering, AI to fields like creative writing, film making etc.</li>
+</ul>
+</li>
+</ul>
+<h2 class="mb-3">In conclusion:</h2>
+Dude listen the only way you are going to find what you want to do in life is if you try different things and being in college is the best time to do this ie <strong>EXPERIMENT!! </strong>So go out there and try everything your heart desires, this doesn't mean start doing drugs ok..I mean productive things.
+
+Do not get too much affected by rejection either from people or situations..
+
+Learning is the most important thing and failure is inevitable but the path towards success and growth is through that failure.
+
+All the best.
+<!-- ADVICE -->
+          </div>
+          <!-- <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div> -->
         </div>
+        
         <script type="text/javascript" src="dash.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
